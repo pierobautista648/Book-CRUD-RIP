@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const booksController = require("./controllers/booksController")
 const app = express();
 const PORT = process.env.PORT || 3001;
+  process.env.MONGODB_URI || "..."
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
